@@ -1,0 +1,5 @@
+{
+  "documentation": "documentation",
+  "changelog": "changelog",
+  "hello": "hello {{name}}"
+}
