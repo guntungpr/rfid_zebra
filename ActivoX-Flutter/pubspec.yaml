@@ -14,6 +14,15 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
+
+  flutter_zebra_rfid:
+    # When depending on this package from a real application you should use:
+    #   flutter_zebra_rfid: ^x.y.z
+    # See https://dart.dev/tools/pub/dependencies#version-constraints
+    # The example app is bundled with the plugin so we use a path dependency on
+    # the parent directory to use the current plugin's version.
+    path: ../
+
   flutter_localizations:
     sdk: flutter
   google_fonts: ^6.1.0
