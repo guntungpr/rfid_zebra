@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_app/resources/pages/nfc/nfc_page.dart';
 // import 'package:flutter_app/resources/pages/scan/scan_qris_page.dart';
 // import 'package:flutter_app/bootstrap/extensions.dart';
 import 'package:flutter_app/resources/widgets/logo_widget.dart';
@@ -145,6 +146,17 @@ class _HomePageState extends NyState<HomePage> {
                 //     "SCAN QR",
                 //   ).bodyMedium(context).alignCenter(),
                 // ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(
+                      context,
+                      NFCPage.path,
+                      // arguments: {'exampleArgument': 'testss'},
+                    );
+                  },
+                  child: Text("Test NFC"),
+                ),
                 const SizedBox(height: 20),
                 Center(
                   child: Text('Running on: $_platformVersion\n'),

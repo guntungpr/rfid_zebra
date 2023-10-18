@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:nylo_support/localization/app_localization.dart';
 
-class ScanQrisPage extends StatelessWidget {
-  const ScanQrisPage({Key? key}) : super(key: key);
-  static const path = '/scan-qris';
+class ScanQRPage extends StatelessWidget {
+  const ScanQRPage({Key? key}) : super(key: key);
+  static const path = '/scan-qr';
 
   @override
   Widget build(BuildContext context) {
-    final arguments =
-        (ModalRoute.of(context)?.settings.arguments ?? <String, dynamic>{}) as Map;
+    // final arguments =
+    //     (ModalRoute.of(context)?.settings.arguments ?? <String, dynamic>{}) as Map;
 
-    print(arguments['exampleArgument']);
+    // print(arguments['exampleArgument']);
 
     const Color overlayColour = Colors.black87;
     final MobileScannerController scannerController = MobileScannerController();
